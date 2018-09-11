@@ -5,8 +5,8 @@
     "content_scripts": [
       {
         "matches": ["https://support.computecanada.ca/*"],
-        "js": ["otrs-hotkeys.js"],
-        "run_at": "document_end"
+        "js": ["otrs-common.min.js", "otrs-module.min.js", "otrs-hotkeys.js"],
+        "run_at": "document_start"
       }
     ],
     "manifest_version": 2

@@ -23,6 +23,9 @@ $(document).ready(function() {
     }).get().reverse();
 
   document.onkeyup = function(e) {
+    if (window.location.href.indexOf('Action=AgentTicketZoom') === -1) {
+      return;
+    }
     var new_index = current_index;
     if (e.which == keycodes['first']) {
       new_index = 0;
