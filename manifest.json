@@ -1,0 +1,13 @@
+{
+    "name": "OTRS Hotkeys",
+    "version": "1.0",
+    "description": "Ticket navigation hotkeys for OTRS",
+    "content_scripts": [
+      {
+        "matches": ["https://support.computecanada.ca/*"],
+        "js": ["otrs-hotkeys.js"],
+        "run_at": "document_end"
+      }
+    ],
+    "manifest_version": 2
+}
